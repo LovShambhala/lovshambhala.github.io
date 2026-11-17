@@ -37,6 +37,12 @@
   .redes { text-align:center; }
   .redes a { display:inline-block; margin:8px; background:#fff; border:1px solid var(--verde); color:var(--verde-oscuro); text-decoration:none; padding:12px 22px; border-radius:30px; font-size:1.05rem; }
   .redes a:hover { background:var(--verde); color:#fff; }
+  .comentarios form { max-width:520px; margin:0 auto; text-align:left; }
+  .comentarios label { display:block; margin:14px 0 6px; font-weight:bold; color:var(--verde-oscuro); }
+  .comentarios input, .comentarios textarea { width:100%; padding:12px 14px; border:1px solid #e3ddcc; border-radius:12px; font-family:Georgia, 'Times New Roman', serif; font-size:1rem; background:#fff; color:var(--texto); }
+  .comentarios button { display:block; margin:20px auto 0; border:none; cursor:pointer; font-family:Georgia, 'Times New Roman', serif; }
+  .comentarios .nota { text-align:center; font-size:.95rem; }
+  .comentarios .nota a { color:var(--verde-oscuro); }
   footer { text-align:center; padding:28px 20px; color:#6b7a6e; font-size:.95rem; border-top:1px solid #e3ddcc; }
 </style>
 </head>
@@ -54,6 +60,28 @@
   <p>Trabajo, pendientes, ruido… y por dentro, cansancio. En LovShambhala volvemos con algo distinto: conciencia, equilibrio y vida saludable, sin complicaciones.</p>
   <p>La gestión emocional como éxito en el trabajo y el aprendizaje humano. Servimos revolucionando, nutriendo.</p>
   <p>Un respiro, un hábito, un cambio a la vez.</p>
+</section>
+
+<section class="post">
+  <h2>Tema del día ✨</h2>
+  <img src="tema-del-dia-martes-visitante.png" alt="Tema del día: Si fueras visitante, ¿qué te gustaría aprender?">
+  <p style="margin-top:16px;"><strong>Si fueras un visitante de esta página, ¿qué información te gustaría ver o aprender?</strong></p>
+  <p>Te proponemos empezar por lo más simple y lo más poderoso: el presente.</p>
+  <p>Estar consciente del ahora te lleva a una respiración consciente. Esa respiración te ayuda a poner atención. La atención fortalece tu voluntad. Y la voluntad… es magia.</p>
+  <p>Cuéntanos: ¿qué te gustaría aprender aquí?</p>
+</section>
+
+<section class="comentarios">
+  <h2>Déjanos tu comentario 💬</h2>
+  <p style="text-align:center;">¿Qué te gustaría ver o aprender en LovShambhala? Escríbenos, te leemos.</p>
+  <form id="form-comentario">
+    <label for="nombre">Tu nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required>
+    <label for="mensaje">Tu comentario</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu comentario…" required></textarea>
+    <button type="submit" class="boton">Enviar comentario</button>
+  </form>
+  <p class="nota" style="margin-top:16px;">Tu mensaje nos llega por correo y lo leemos con cariño. También puedes escribirnos por <a href="https://ig.me/m/lovshambhala" target="_blank" rel="noopener">Instagram</a>.</p>
 </section>
 
 <section>
@@ -132,6 +160,17 @@
   LovShambhala — Zacatecas, México 🌿<br>
   Conciencia, equilibrio y vida saludable.
 </footer>
+
+<script>
+  document.getElementById('form-comentario').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var nombre = document.getElementById('nombre').value.trim();
+    var mensaje = document.getElementById('mensaje').value.trim();
+    var asunto = encodeURIComponent('Comentario en LovShambhala — ' + nombre);
+    var cuerpo = encodeURIComponent('Nombre: ' + nombre + '\n\nComentario:\n' + mensaje);
+    window.location.href = 'mailto:chaman.ales@gmail.com?subject=' + asunto + '&body=' + cuerpo;
+  });
+</script>
 
 </body>
 </html>
