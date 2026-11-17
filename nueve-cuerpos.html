@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Los nueve cuerpos — LovShambhala</title>
-<meta name="description" content="Los nueve cuerpos del ser humano en tres complejos: físico-pránico, astral-causal y mental-espiritual. Una síntesis esotérica de LovShambhala.">
+<meta name="description" content="Los nueve cuerpos del ser humano en tres complejos: físico-pránico, astral-causal y mental-espiritual. Una síntesis esotérica de LovShambhala, con mapa conceptual, prácticas, consenso y debate, y fuentes.">
 <style>
   :root { --verde:#7d9b82; --verde-oscuro:#4a6b52; --dorado:#c9a86a; --fondo:#f7f5ef; --texto:#2e3a30; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -23,10 +23,37 @@
   .nota { background:#fff; border:1px solid #e3ddcc; border-radius:14px; padding:20px; font-size:1rem; }
   .cuerpo { background:#fff; border:1px solid #e3ddcc; border-radius:14px; padding:16px 20px; margin-bottom:12px; }
   .cuerpo strong { color:var(--verde-oscuro); }
+  .cuerpo .sanscrito { font-style:italic; color:#5a6b5e; }
+  .debate { background:#fdf6e3; border:1px solid #e3d9a8; border-radius:10px; padding:12px 16px; margin-top:10px; font-size:.98rem; }
+  .badge { display:inline-block; font-size:.85rem; background:#eef1e8; border:1px solid #d5dcc9; color:var(--verde-oscuro); border-radius:20px; padding:2px 10px; margin-top:8px; }
+  .badge.aviso { background:#fdf6e3; border-color:#e3d9a8; color:#6b4e00; }
   .practica { font-style:italic; color:#5a6b5e; }
+  .mapa { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-top:20px; }
+  .mapa .nodo { background:#fff; border:1px solid #e3ddcc; border-radius:14px; padding:18px; text-align:center; }
+  .mapa .nodo h3 { margin:0 0 6px; font-size:1.15rem; }
+  .cuenta { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-top:20px; }
+  .cuenta .nodo { background:#fff; border:1px solid #e3ddcc; border-radius:14px; padding:18px; text-align:center; }
+  .cuenta .num { font-size:2rem; color:var(--dorado); font-weight:bold; }
+  .filtros { text-align:center; margin:18px 0 8px; }
+  .filtros button { font-family:Georgia, 'Times New Roman', serif; background:#fff; border:1px solid var(--verde); color:var(--verde-oscuro); padding:9px 18px; border-radius:30px; font-size:1rem; margin:4px; cursor:pointer; }
+  .filtros button.activo { background:var(--verde-oscuro); color:#fff; }
+  .indice { text-align:center; font-size:1rem; }
+  .indice a { color:var(--verde-oscuro); }
+  .fase { background:#fff; border:1px solid #e3ddcc; border-radius:14px; padding:20px; margin-bottom:14px; }
+  .fase h3 { margin-top:0; }
+  .fase ul { margin:0 0 10px 22px; font-size:1.02rem; }
+  .fase li { margin-bottom:6px; }
+  table.tabla { width:100%; border-collapse:collapse; background:#fff; font-size:.98rem; margin-top:14px; }
+  table.tabla th, table.tabla td { border:1px solid #e3ddcc; padding:10px 12px; text-align:left; vertical-align:top; }
+  table.tabla th { background:#eef1e8; color:var(--verde-oscuro); }
+  .fuentes { font-size:.98rem; }
+  .fuentes li { margin-bottom:8px; }
+  .fuentes a { color:var(--verde-oscuro); word-break:break-all; }
+  .cita { background:#fff; border:1px solid #e3ddcc; border-left:4px solid var(--dorado); border-radius:10px; padding:16px 20px; font-size:1rem; white-space:pre-wrap; }
   .volver { text-align:center; }
   .volver a { color:var(--verde-oscuro); }
   footer { text-align:center; padding:28px 20px; color:#6b7a6e; font-size:.95rem; border-top:1px solid #e3ddcc; }
+  @media (max-width:640px) { .mapa, .cuenta { grid-template-columns:1fr; } table.tabla { font-size:.92rem; } }
 </style>
 </head>
 <body>
@@ -38,42 +65,250 @@
 </header>
 
 <section>
-  <p style="text-align:center;">No eres solo un cuerpo. Según la tradición esotérica —teosofía, yoga y gnosis—, somos nueve niveles en tres movimientos que se interpenetran, como las capas de una cebolla que guardan la misma luz.</p>
+  <p style="text-align:center;">No eres solo un cuerpo físico. Según la tradición esotérica, somos niveles vitales, emocionales, mentales, álmicos y espirituales que se interpenetran —no capas separadas— y que esta síntesis ordena en tres complejos de tres. Esta página explica cada cuerpo, de dónde viene el esquema, cómo se recorre el camino —purificar el vehículo, despertar el puente, reflejar la luz— y, con honestidad, qué es consenso entre escuelas y qué es una decisión moderna de la infografía.</p>
   <div class="nota">
-    <p style="margin-bottom:0;"><strong>Una aclaración honesta:</strong> este esquema de 9 cuerpos en 3 complejos no es un texto canónico de una sola tradición. Es una síntesis divulgativa moderna sobre el septenario teosófico, los 7 vehículos de Besant, Leadbeater y Bailey, ampliado al separar el prana como cuerpo propio y agregar el Cuerpo de Luz. La división clásica es 4+3, no 3+3+3. Lo presentamos como un mapa simbólico de las tradiciones, no como una medida médica ni como cita textual de un autor.</p>
+    <p style="margin-bottom:0;"><strong>Lectura honesta desde el inicio:</strong> el esquema de 9 cuerpos en 3 complejos no es un texto canónico único de ninguna tradición. Es una síntesis divulgativa moderna construida sobre el septenario teosófico de 7. Todo lo que sigue pertenece al esoterismo y la espiritualidad, no a evidencia científica, y no promete salud, curación ni resultados.</p>
+  </div>
+  <p class="indice" style="margin-top:20px;"><a href="#complejos">Los 3 complejos</a> · <a href="#cuerpos">Los 9 cuerpos</a> · <a href="#practicas">Prácticas</a> · <a href="#debate">Consenso y debate</a> · <a href="#instagram">Texto para Instagram</a> · <a href="#fuentes">Fuentes</a></p>
+  <p style="text-align:center; margin-top:14px;">La infografía de partida: tres complejos —I. Físico-Pránico, II. Astral-Causal, III. Mental-Espiritual— recorridos por un «Proceso de Evolución Espiritual y Experiencia», de la purificación del ego a la reflexión de la luz divina. Algunos textos pequeños de la imagen original se leen con dificultad; esta página los explica con fuentes.</p>
+</section>
+
+<section>
+  <h2>De 7 a 9: la cuenta exacta</h2>
+  <p style="text-align:center;">La columna vertebral es el <strong>septenario teosófico</strong>: Blavatsky presenta 7 principios —Atma, Buddhi, Manas, Kama-rupa, Prana, Linga-sarira, Sthula-sarira— y Besant y Leadbeater lo reformulan como 7 vehículos. La infografía llega a 9 con dos movimientos:</p>
+  <div class="cuenta">
+    <div class="nodo">
+      <div class="num">7</div>
+      <h3>Los clásicos</h3>
+      <p style="font-size:.98rem;">Físico, etérico, astral, mental inferior, causal, búdico y átmico. Es la lista que comparten, con matices, Blavatsky, Besant–Leadbeater, Bailey y Samael Aun Weor.</p>
+    </div>
+    <div class="nodo">
+      <div class="num">+1</div>
+      <h3>El pránico, separado</h3>
+      <p style="font-size:.98rem;">El prana ya era uno de los 7 principios en Blavatsky, pero no un cuerpo separado del doble etérico; en Besant/Leadbeater queda absorbido en el etérico. Separarlo es una decisión de la infografía.</p>
+    </div>
+    <div class="nodo">
+      <div class="num">+1</div>
+      <h3>El cuerpo de luz, añadido</h3>
+      <p style="font-size:.98rem;">Un 9.º nivel por encima del átmico: conciencia pura. En las fuentes no aparece como cuerpo estándar que todos posean, sino como meta o realización (ver debate abajo).</p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:18px;">Y un aviso importante: los nombres «Vehículo Transitorio», «Puente Evolutivo», «Esencia Eterna» y las fases «Purificación del Ego», «Despertar de la Conciencia» y «Reflexión de la Luz Divina» <strong>no se encontraron como cita clásica</strong> en Blavatsky, Bailey o Samael en las fuentes consultadas. Son etiquetas pedagógicas coherentes con esas tradiciones, pero deben presentarse como síntesis divulgativa, no como cita textual de un autor.</p>
+</section>
+
+<section id="complejos">
+  <h2>Los tres complejos</h2>
+  <p style="text-align:center;">La división clásica es <strong>4 + 3</strong> —cuaternario inferior mortal y tríada superior inmortal, unidos por el <em>antahkarana</em>, el puente. La infografía lo reagrupa en <strong>3 + 3 + 3</strong>, colocando el cuerpo causal como gozne en el complejo del medio. El reordenamiento es moderno; la idea de fondo —lo denso y transitorio → el alma-puente → el espíritu eterno— sí es clásica.</p>
+
+  <div class="cuerpo">
+    <h3 style="margin-top:0;">Complejo I · Físico-Pránico — Vehículo Transitorio</h3>
+    <p style="text-align:center; margin-bottom:6px;">El instrumento encarnado: el cuerpo que se ve, el molde que lo sostiene y la energía que lo vitaliza.</p>
+    <p style="text-align:center; margin-bottom:6px;"><strong>Cuerpo Físico (Denso) · Cuerpo Etérico (Doble Vital) · Cuerpo Pránico (Fuerza Vital)</strong></p>
+    <p style="text-align:center; margin-bottom:0;" class="practica">Fase · Purificación del Ego</p>
+  </div>
+  <div class="cuerpo">
+    <h3 style="margin-top:0;">Complejo II · Astral-Causal — Puente Evolutivo</h3>
+    <p style="text-align:center; margin-bottom:6px;">Emociones, mente concreta y alma. Aquí la personalidad se ordena —o se desordena— y se construye el puente hacia el espíritu.</p>
+    <p style="text-align:center; margin-bottom:6px;"><strong>Cuerpo Astral (Emocional) · Cuerpo Mental Inferior (Mente Concreta) · Cuerpo Causal (Mente Superior / Alma)</strong></p>
+    <p style="text-align:center; margin-bottom:0;" class="practica">Fase · Despertar de la Conciencia</p>
+  </div>
+  <div class="cuerpo">
+    <h3 style="margin-top:0;">Complejo III · Mental-Espiritual — Esencia Eterna</h3>
+    <p style="text-align:center; margin-bottom:6px;">Intuición, espíritu y conciencia pura. En el lenguaje clásico son principios <em>sin forma</em> (<em>arupa</em>), no cuerpos con forma.</p>
+    <p style="text-align:center; margin-bottom:6px;"><strong>Cuerpo Búdico (Intuición / Unidad) · Cuerpo Átmico · Cuerpo de Luz (Conciencia Pura)</strong></p>
+    <p style="text-align:center; margin-bottom:0;" class="practica">Fase · Reflexión de la Luz Divina</p>
+  </div>
+
+  <h2 style="margin-top:36px;">Mapa conceptual</h2>
+  <p style="text-align:center;">El proceso de evolución espiritual y experiencia, en tres movimientos:</p>
+  <div class="mapa">
+    <div class="nodo">
+      <h3>I · Físico-Pránico</h3>
+      <p><strong>Vehículo Transitorio</strong></p>
+      <p>Purificación del Ego</p>
+      <p style="font-size:.95rem; color:#5a6b5e;">Físico · Etérico · Pránico</p>
+    </div>
+    <div class="nodo">
+      <h3>II · Astral-Causal</h3>
+      <p><strong>Puente Evolutivo</strong></p>
+      <p>Despertar de la Conciencia</p>
+      <p style="font-size:.95rem; color:#5a6b5e;">Astral · Mental Inferior · Causal</p>
+    </div>
+    <div class="nodo">
+      <h3>III · Mental-Espiritual</h3>
+      <p><strong>Esencia Eterna</strong></p>
+      <p>Reflexión de la Luz Divina</p>
+      <p style="font-size:.95rem; color:#5a6b5e;">Búdico · Átmico · Cuerpo de Luz</p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:18px;">El <strong>antahkarana</strong> es el puente entre la personalidad y la Tríada: el causal conecta lo que somos abajo con lo que somos arriba. La luz no baja como algo externo: es lo que queda cuando se retiran los velos.</p>
+</section>
+
+<section id="cuerpos">
+  <h2>Los nueve cuerpos, uno por uno</h2>
+  <p style="text-align:center;">Qué es cada uno, para qué sirve según las tradiciones y qué se repite en las fuentes. Filtra por complejo para recorrer el camino por partes.</p>
+  <div class="filtros">
+    <button class="activo" data-filtro="todos" onclick="filtrar('todos', this)">Todos</button>
+    <button data-filtro="1" onclick="filtrar('1', this)">I · Físico-Pránico</button>
+    <button data-filtro="2" onclick="filtrar('2', this)">II · Astral-Causal</button>
+    <button data-filtro="3" onclick="filtrar('3', this)">III · Mental-Espiritual</button>
+  </div>
+
+  <div class="cuerpo" data-complejo="1"><strong>1. Cuerpo Físico (Denso).</strong> <span class="sanscrito">Sthula-sarira.</span> El vehículo material: órganos, tejidos, glándulas, células y átomos; el «traje» con el que el alma experimenta el plano físico. En Samael es el «cuerpo planetario o tridimensional», que cambia cada 7 años. El más denso y visible, perecedero; moldeado según el etérico. En él se encuentran todos los demás <em>koshas</em>: solo en él es posible la manifestación terrestre, según Abhyasi.<br><span class="badge">Consenso clásico</span></div>
+  <div class="cuerpo" data-complejo="1"><strong>2. Cuerpo Etérico (Doble Vital).</strong> <span class="sanscrito">Linga-sarira.</span> El molde del físico: doble exacto en forma y tamaño que transmite la vida al cuerpo denso y es vehículo del prana. En Besant, el doble etéreo forma parte del cuerpo físico (sus 4 subdivisiones etéricas, junto a sólido, líquido y gaseoso). Interpenetrado con el físico; en la lectura clásica se desintegra tras la muerte junto con él. La divulgación de Carrillo lo une al físico por el «Cordón de Plata», corriente de energía vital.<br><span class="badge">Consenso clásico</span></div>
+  <div class="cuerpo" data-complejo="1"><strong>3. Cuerpo Pránico (Fuerza Vital).</strong> <span class="sanscrito">Prana.</span> La energía que vitaliza: en Blavatsky el prana es un <em>principio</em> —«energía de vitalidad», «la Vida Una»— que se manifiesta como calor, tono muscular y corrientes. Su captación principal es la respiración (<em>pranamaya kosha</em>), junto al alimento y los chakras. Función: vitalizar, cohesionar y reponer la energía gastada; sin prana, el cuerpo sería solo células independientes. La infografía lo eleva a cuerpo propio, separado del etérico.
+    <div class="debate"><strong>⚠️ Punto de debate:</strong> en Blavatsky el prana es un principio, no un cuerpo separado del doble etérico; en Besant y Leadbeater queda absorbido en el etérico. Separarlo es una decisión pedagógica de la infografía, no la lectura mayoritaria.</div>
+  </div>
+
+  <div class="cuerpo" data-complejo="2"><strong>4. Cuerpo Astral (Emocional).</strong> <span class="sanscrito">Kama / Kama-rupa.</span> El cuerpo de los deseos: emociones y sentimientos; en Samael, el «cuerpo de los deseos o de los sueños», que se desprende de noche y se vivencia en sueños. En Besant/Leadbeater, «astral» equivale a <em>kama</em>, no a <em>linga</em>. Repercute directamente en el físico a través de las emociones. En la formulación de Carrillo, los deseos de baja frecuencia (materiales y egoicos: ostentación, codicia) bajan la energía; los de alta frecuencia (altruismo, caridad, búsqueda espiritual) la elevan.<br><span class="badge">Consenso clásico</span></div>
+  <div class="cuerpo" data-complejo="2"><strong>5. Cuerpo Mental Inferior (Mente Concreta).</strong> <span class="sanscrito">Kama-manas / Rupa-manas.</span> La mente que organiza lo cotidiano: habla, escribe, planifica, emite juicios y expectativas; en Carrillo, «la voz interior que habla sin control». En Samael, en él están las leyes matemáticas y lógicas, y el humano corriente tiene un mental «lunar». Es limitada: sirve para gestionar lo cotidiano, <strong>no</strong> para comprender la vida; si se usa para todo, distorsiona la realidad. Forma parte de la personalidad perecedera.<br><span class="badge">Consenso clásico</span></div>
+  <div class="cuerpo" data-complejo="2"><strong>6. Cuerpo Causal (Mente Superior / Alma).</strong> <span class="sanscrito">Manas superior / Arupa-manas.</span> El puente: mente abstracta y alma individualizada; «la mente del alma», la que pregunta quiénes somos y de dónde venimos. Contiene la memoria de causas y efectos de las encarnaciones —la ley del karma— y los átomos permanentes, según Bailey. A diferencia de los cuatro inferiores, que se renuevan en cada encarnación, es el vehículo permanente del Ego reencarnante y sede del <em>antahkarana</em>. En Samael es el cuerpo de la voluntad: solo se adquiere voluntad consciente reduciendo los agregados psicológicos.<br><span class="badge">El gozne entre los complejos</span></div>
+
+  <div class="cuerpo" data-complejo="3"><strong>7. Cuerpo Búdico (Intuición / Unidad).</strong> <span class="sanscrito">Buddhi.</span> El alma espiritual: vehículo de Atma hacia Manas en Blavatsky; intuición directa sin razonamiento, unidad y amor-sabiduría. En Samael es el cuerpo de la conciencia, que se obtiene cuando se eliminan los yoes y la conciencia queda liberada. En los <em>koshas</em> corresponde a <em>Vijnanamaya</em> (discernimiento, Budhi) y, en su vertiente de dicha, a <em>Anandamaya</em>. No es un cuerpo con forma (<em>arupa</em>); en Bailey, en la 5.ª iniciación el adepto se afirma en lo búdico.<br><span class="badge aviso">Principio sin forma en la lectura clásica</span></div>
+  <div class="cuerpo" data-complejo="3"><strong>8. Cuerpo Átmico.</strong> <span class="sanscrito">Atma.</span> El espíritu, la Mónada: «chispa de energía divina», «espíritu uno universal» en Blavatsky; en Samael, el cuerpo del Íntimo, «la gran realidad de la vida… dicha y felicidad sin límites». Origen y destino. Según Theosophy World, Atma <strong>no es una entidad individual</strong>: solo se vuelve Mónada al unirse a Buddhi (Atma-Buddhi). No experimenta la materia directamente; por eso se expresa a través del búdico, el causal y la personalidad.<br><span class="badge aviso">Principio sin forma en la lectura clásica</span></div>
+  <div class="cuerpo" data-complejo="3"><strong>9. Cuerpo de Luz (Conciencia Pura).</strong> La culminación de la infografía —y su afirmación más discutible. En las fuentes conviven tres sentidos distintos: (a) el <em>Mayavi-rupa</em> teosófico, cuerpo mental temporal creado por el adepto; (b) el <em>Karana-sharira</em> o Cuerpo Espiritual, gestado en el causal cuando maduran los átomos búdico y átmico; (c) el cuerpo de arcoíris <em>Jalu</em> del Dzogchen tibetano: disolución del cuerpo denso en luz pura al morir, tras purificar los 5 elementos. Debe presentarse como <strong>meta o realización</strong>, no como un cuerpo que todo el mundo ya posee al mismo nivel que el físico.
+    <div class="debate"><strong>⚠️ Punto de debate:</strong> no es un 9.º cuerpo estándar. Tres sentidos conviven en las fuentes: (a) <em>Mayavi-rupa</em>, vehículo mental temporal creado por el adepto; (b) <em>Karana-sharira</em>, vehículo del maestro gestado en el cuerpo causal; (c) <em>Jalu</em>, el cuerpo de arcoíris del Dzogchen tibetano, la disolución del cuerpo denso en luz. Debe presentarse como meta, no como algo que todo el mundo ya posee.</div>
   </div>
 </section>
 
 <section>
-  <h2>I · Complejo Físico-Pránico</h2>
-  <p style="text-align:center;">Vehículo Transitorio · Purificación del Ego</p>
-  <div class="cuerpo"><strong>1. Cuerpo Físico (Denso).</strong> El vehículo material: órganos, tejidos y células. El traje con el que el alma experimenta el plano físico.</div>
-  <div class="cuerpo"><strong>2. Cuerpo Etérico (Doble Vital).</strong> El molde del físico, su doble exacto. Transmite la vida al cuerpo denso y es el vehículo del prana.</div>
-  <div class="cuerpo"><strong>3. Cuerpo Pránico (Fuerza Vital).</strong> La energía vital que se capta sobre todo con la respiración. En la tradición clásica el prana es un principio, no un cuerpo aparte; aquí se presenta separado como mapa pedagógico.</div>
-  <p class="practica" style="text-align:center;">Práctica: respiración consciente, movimiento, descanso y hatha yoga.</p>
+  <h2>Cómo se conectan: el antahkarana</h2>
+  <p style="text-align:center;">Los principios no son capas concéntricas separadas: son <strong>interpenetrados</strong>. El hilo que los une tiene nombre propio en la teosofía.</p>
+  <div class="mapa">
+    <div class="nodo"><h3>Complejo I</h3><p>El instrumento encarnado</p></div>
+    <div class="nodo"><h3>Complejo II · Antahkarana</h3><p>El puente de conciencia</p></div>
+    <div class="nodo"><h3>Complejo III</h3><p>Alma universal y espíritu</p></div>
+  </div>
+  <p style="margin-top:18px;"><strong>I → II:</strong> el etérico y el prana son los mediadores: llevan al físico lo que viene del astral y del mental. En palabras de la divulgación de Carrillo: «a través del cuerpo etérico fluye la vida, el prana… también transmite las energías derivadas de nuestro componente emocional y de la mente concreta». Sin un vehículo purificado, la señal del alma llega distorsionada.</p>
+  <p><strong>II es el puente:</strong> el astral y el mental inferior son la personalidad que debe ser ordenada; el causal es el archivo del alma y el punto de contacto con la Tríada. En Bailey, la evolución consiste en construir ese puente hasta transferir el centro de la personalidad a la Tríada espiritual.</p>
+  <p><strong>II → III:</strong> construido el puente, la conciencia deja de identificarse con la personalidad y se reconoce primero como alma individualizada (causal), luego como alma universal (búdico) y espíritu (átmico). La luz no «baja» como algo externo: es lo que queda cuando se retiran los velos —los <em>koshas</em> son, en Abhyasi, «las cinco capas de encarnación [que] ocultan la luz del Sí mismo».</p>
+</section>
+
+<section id="practicas">
+  <h2>El proceso evolutivo y sus prácticas</h2>
+  <p style="text-align:center;">Las tres fases con esos nombres exactos son de la infografía. Abajo, cada fase se traduce a lenguaje y prácticas que <strong>sí</strong> están documentadas en las tradiciones, para no inventar atribuciones.</p>
+
+  <div class="fase">
+    <h3>Fase I · Purificación del Ego — Cuidar el vehículo</h3>
+    <p>Sentido esotérico: purificar el instrumento denso para que no bloquee la conexión con el alma —el físico es «el envase del alma» y cuidarlo evita que las conexiones se distorsionen o bloqueen (Carrillo).</p>
+    <ul>
+      <li><strong>Hatha yoga</strong> como preparación: «purificar el cuerpo, armonizar la energía vital (<em>prana</em>) y estabilizar la mente para facilitar la absorción meditativa (<em>dhyana</em>)». El <em>Gheranda Samhita</em> empieza por <em>shodhana</em> (purificación) y culmina en <em>nirliptatva</em> (desapego, trascendencia del ego).</li>
+      <li><strong>Pranayama:</strong> «Mientras el aliento permanezca en el cuerpo, la vida persiste. Y mientras el prana esté estable, la mente también lo estará» (<em>Hatha Yoga Pradipika</em> 2.3). El control del aliento conduce a <em>pratyahara</em> y luego a la concentración (<em>Yoga Sutras</em> II.49–53).</li>
+      <li><strong>Lo básico:</strong> alimentación, descanso, respiración consciente y movimiento corporal.</li>
+      <li><strong>En gnosis, más exigente:</strong> la «muerte del ego», disolución de los agregados psicológicos (yoes) mediante auto-observación, como condición para los cuerpos superiores.</li>
+    </ul>
+    <p class="practica" style="margin-bottom:0;">Fuente: Prana.es, sobre <em>Hatha Yoga Pradipika</em>, <em>Gheranda Samhita</em> y <em>Shiva Samhita</em>; Samael Aun Weor.</p>
+  </div>
+
+  <div class="fase">
+    <h3>Fase II · Despertar de la Conciencia — Ordenar el puente</h3>
+    <p>Sentido esotérico: ordenar deseos y pensamientos para que la personalidad deje de mandar y el alma pueda conducir. La idea de fondo —<em>kama-manas</em> debe ser dominado por <em>manas</em> superior— es blavatskiana.</p>
+    <ul>
+      <li><strong>Gestión emocional y auto-observación:</strong> observar deseos, celos, codicia y miedo sin identificarse con ellos.</li>
+      <li><strong>Meditación y concentración</strong> (<em>dharana–dhyana</em>) para silenciar la «voz interior sin control» de la mente concreta.</li>
+      <li><strong>Estudio y reflexión:</strong> preguntas por el sentido —quiénes somos, de dónde venimos—, función de la mente abstracta o causal.</li>
+      <li><strong>Trabajo con los sueños:</strong> sueño consciente y recuerdo de sueños como encuentro con el astral (Samael).</li>
+    </ul>
+    <p><strong>El hito:</strong> el <em>antahkarana</em>, construir el puente entre mente concreta y mente abstracta. No es una técnica única con pasos verificables en una sola fuente, sino el nombre que teosofía y Bailey dan a ese proceso de integración.</p>
+    <p class="practica" style="margin-bottom:0;">Fuentes: Bailey, <em>El alma: la cualidad de la vida</em> (entrenamiento del cuerpo emocional y mental); Samael Aun Weor; Carrillo (divulgación).</p>
+  </div>
+
+  <div class="fase">
+    <h3>Fase III · Reflexión de la Luz Divina — Reflejar, no buscar fuera</h3>
+    <p>Sentido esotérico: reconocerse como alma universal (búdico) y espíritu (átmico); la conciencia deja de reflejarse en lo personal y refleja lo divino, como un espejo limpio. En los <em>koshas</em>, <em>Vijnanamaya</em> «posee el reflejo de la luz del ser» y <em>Anandamaya</em> trasciende tiempo, espacio e individualidad.</p>
+    <ul>
+      <li><strong>Meditación profunda, contemplación, silencio, <em>samadhi</em>.</strong></li>
+      <li><strong>Raja yoga</strong> como culminación del hatha: «con esta ciencia, el yogui que busca la paz alcanza el raja yoga» (<em>HYP</em> 1.4).</li>
+      <li><strong>En Dzogchen:</strong> permanencia en <em>Rigpa</em> y práctica de <em>Tögal</em>, vía hacia el cuerpo de arcoíris.</li>
+      <li><strong>En teosofía y Bailey:</strong> meditación ocultista y servicio altruista, transmitir desde la Tríada superior a la personalidad a través del causal.</li>
+    </ul>
+    <p class="practica" style="margin-bottom:0;">Formulación prudente: esta fase se presenta como horizonte y contemplación, no como logro garantizado ni como técnica de «activación del cuerpo de luz» en un plazo.</p>
+  </div>
 </section>
 
 <section>
-  <h2>II · Complejo Astral-Causal</h2>
-  <p style="text-align:center;">Puente Evolutivo · Despertar de la Conciencia</p>
-  <div class="cuerpo"><strong>4. Cuerpo Astral (Emocional).</strong> Deseos, emociones y sentimientos. Es el cuerpo de los sueños: se desprende de noche y se vivencia al soñar.</div>
-  <div class="cuerpo"><strong>5. Cuerpo Mental Inferior (Mente Concreta).</strong> La mente que organiza, planifica, habla y juzga. Sirve para gestionar lo cotidiano, no para comprender la vida.</div>
-  <div class="cuerpo"><strong>6. Cuerpo Causal (Mente Superior / Alma).</strong> El puente: mente abstracta y alma individualizada, memoria de causas y efectos, el punto de conexión entre la personalidad y el espíritu.</div>
-  <p class="practica" style="text-align:center;">Práctica: gestión emocional, auto-observación, meditación, estudio y reflexión.</p>
+  <h2>El mismo territorio, otros mapas</h2>
+  <p style="text-align:center;">Ninguna tradición cuenta igual, porque unas cuentan principios, otras vehículos y otras planos. Estos son los mapas vecinos —útiles para no confundirlos con este esquema de 9.</p>
+  <table class="tabla">
+    <tr><th>Mapa</th><th>Cuántos y cuáles</th><th>Correspondencia con los 9</th></tr>
+    <tr><td><strong>5 koshas</strong><br>Vedanta · <em>Taittiriya Upanishad</em></td><td>Annamaya, Pranamaya, Manomaya, Vijnanamaya, Anandamaya —5 envolturas que ocultan la luz del Sí mismo, no 9 cuerpos.</td><td>Annamaya ≈ físico · Pranamaya ≈ etérico + pránico · Manomaya ≈ astral + mental inferior · Vijnanamaya ≈ causal / búdico (discernimiento, Budhi, sede del ego) · Anandamaya ≈ causal / búdico (dicha, morada de Atman-testigo).</td></tr>
+    <tr><td><strong>Steiner</strong><br>Antroposofía</td><td>Solo <strong>4 miembros</strong>: físico, etérico, astral, Yo. Y 3 miembros superiores <strong>futuros, por transformación</strong>.</td><td>El astral transformado se vuelve Manas (Yo espiritual); el etérico transformado, Budhi (Espíritu de Vida); el físico transformado, Atman (Hombre-Espíritu). Los 3 superiores son <strong>metas</strong>, no vehículos ya dados.</td></tr>
+    <tr><td><strong>Bailey / Djwhal Khul</strong></td><td>Personalidad, Ego y Tríada espiritual.</td><td>Personalidad = etérico/vital + astral/emocional + mental inferior · Ego o alma = cuerpo causal · Tríada = Atma-Buddhi-Manas, expresión de la Mónada.</td></tr>
+    <tr><td><strong>Egipto antiguo</strong></td><td><strong>9 componentes, pero otros:</strong> Sekhem, Ren, Khu, Khaibet, Ba, Ka, Ab, Sahu, Khat.</td><td>Fuerza vital, nombre secreto, alma luminosa, sombra, alma-corazón, doble, corazón-conciencia, cuerpo espiritual y cuerpo natural. <strong>No es este esquema:</strong> no confundir.</td></tr>
+    <tr><td><strong>Kundalini Yoga</strong><br>Yogi Bhajan</td><td><strong>10 cuerpos:</strong> alma, mente negativa / positiva / neutral, físico, arco de luz, aura, pránico, sutil, radiante.</td><td>Otro «nueve ampliado» distinto: aquí el pránico sí es cuerpo propio, pero el resto del mapa no coincide con la infografía.</td></tr>
+  </table>
+</section>
+
+<section id="debate">
+  <h2>Consenso y debate: 7 frente a 9</h2>
+  <p style="text-align:center;">Lo que puede afirmarse con tranquilidad y lo que debe matizarse, tema por tema.</p>
+  <table class="tabla">
+    <tr><th>Tema</th><th>Consenso entre escuelas</th><th>Lo que varía / debate abierto</th></tr>
+    <tr><td><strong>¿7 o 9 cuerpos?</strong></td><td>Casi todas las escuelas citadas coinciden en una estructura <strong>septenaria (7)</strong> como mapa base.</td><td>El 9 sale de <strong>desdoblar</strong> (prana separado del etérico) y <strong>añadir</strong> la luz. No es el número clásico.</td></tr>
+    <tr><td><strong>¿Etérico y pránico son dos cuerpos?</strong></td><td>Existe una dimensión vital y energética intermedia entre físico y astral/emocional: sí, en todas.</td><td>Blavatsky: prana es principio universal, no cuerpo individual. Besant/Leadbeater: el etérico es el <em>vehículo</em> del prana. Vedanta popular: «cuerpo pránico o doble etérico», un solo doble. Separarlos es decisión pedagógica de la infografía, no la lectura mayoritaria.</td></tr>
+    <tr><td><strong>¿El mental es uno o dos?</strong></td><td><em>Manas</em> es dual (superior / inferior) en Blavatsky y en Theosophy World.</td><td>Blavatsky lo cuenta como <strong>un</strong> principio dual; Besant/Leadbeater y la infografía lo cuentan como <strong>dos</strong> vehículos (mental inferior y causal).</td></tr>
+    <tr><td><strong>¿Búdico y átmico son «cuerpos»?</strong></td><td>Buddhi (intuición / unidad) y Atma (espíritu) son los niveles más altos: sí.</td><td>En Blavatsky son <strong>principios sin forma</strong> (<em>arupa</em>). Llamarlos «cuerpos» es lenguaje divulgativo posterior. Steiner los trata como transformaciones futuras.</td></tr>
+    <tr><td><strong>¿Qué es el «cuerpo de luz»?</strong></td><td>Hay una realización luminosa última descrita en varias tradiciones: sí, como <strong>meta</strong>.</td><td>No hay un solo «cuerpo de luz»: <em>Mayavi-rupa</em>, <em>Karana-sharira</em>, <em>Jalu</em> de arcoíris y el «Merkabah» de la divulgación <em>new age</em> son cosas distintas. Una fuente teosófica advierte además que el nombre es relativo, porque el astral y el mental también se perciben luminosos.</td></tr>
+    <tr><td><strong>¿Los cuerpos se «tienen» o se «crean»?</strong></td><td>El físico y el vital están dados al nacer: sí.</td><td>Samael: astral, mental y causal hay que <strong>crearlos</strong> (cuerpos solares / de fuego); la persona común tiene cuerpos «lunares» y solo posee de hecho físico + vital. Besant/Bailey: los vehículos existen como potencial y se desarrollan y purifican. La infografía, al listarlos como dados, sigue la lectura Besant/Bailey.</td></tr>
+    <tr><td><strong>¿Tres complejos o 4 + 3?</strong></td><td>La división en dos grandes bloques —personalidad perecedera / individualidad inmortal— es clásica.</td><td>El <strong>3 + 3 + 3 no es clásico</strong>; el clásico es 4 + 3. El reagrupamiento se entiende (el causal hace de puente), pero es síntesis, no doctrina de una escuela.</td></tr>
+  </table>
+
+  <div class="cuerpo" style="margin-top:18px;"><strong>Puede afirmarse con tranquilidad:</strong> somos más que el cuerpo físico. Hay niveles vital, emocional, mental, álmico y espiritual interpenetrados. La evolución se describe como purificar lo denso, ordenar emoción y mente, y reconocer la unidad. El causal / alma es el puente entre personalidad y espíritu.</div>
+  <div class="cuerpo"><strong>Debe matizarse siempre:</strong> el número exacto (5 koshas, 7 principios/vehículos, 9 de la infografía, 10 del Kundalini Yoga, 9 componentes egipcios distintos). Si el prana es cuerpo o principio. Qué significa exactamente «cuerpo de luz». Que las prácticas «activen» un cuerpo sutil: tienen respaldo tradicional, pero no en sentido comprobable.</div>
+
+  <h3>Lo que no se pudo verificar — preguntas abiertas</h3>
+  <div class="cuerpo">No se encontró fuente primaria que enseñe literalmente «tres complejos de tres cuerpos» con los nombres «Vehículo Transitorio / Puente Evolutivo / Esencia Eterna» ni las fases «Purificación del Ego / Despertar de la Conciencia / Reflexión de la Luz Divina». Se trataron como formulación de la infografía.</div>
+  <div class="cuerpo">No se encontró una lista canónica única de los 9 cuerpos con el pránico y el cuerpo de luz en ese orden en Blavatsky, Bailey, Leadbeater o Samael. La correspondencia 7 → 9 es una reconstrucción razonada a partir de las fuentes citadas, y así debe presentarse.</div>
+  <div class="cuerpo">Las afirmaciones de Movimiento Despierta / Emilio Carrillo (cordón de plata, dimensiones, karma) son divulgación contemporánea, no texto clásico verificado; aquí se usaron solo para definiciones de cada cuerpo, con esa salvedad.</div>
+  <div class="cuerpo">No se verificaron citas textuales de <em>La doctrina secreta</em>, <em>Iniciación humana y solar</em> o el <em>Tratado de alquimia sexual</em> más allá de los extractos citados en las fuentes secundarias consultadas; no se atribuyen páginas ni frases literales no vistas.</div>
+  <div class="cuerpo">El «cuerpo de luz» en sentido Dzogchen (<em>Jalu</em>) y en sentido teosófico (<em>Mayavi-rupa</em> / <em>Karana-sharira</em>) son conceptos distintos; no se fusionaron.</div>
+</section>
+
+<section id="instagram">
+  <h2>Para compartir en Instagram</h2>
+  <p style="text-align:center;">Borrador armado solo con lo verificado arriba: presenta el mapa como lo que es —una síntesis de las tradiciones— y cierra con pregunta, en la voz de la marca: conciencia, equilibrio y vida saludable.</p>
+  <h3>Texto del feed</h3>
+  <div class="cita">No eres solo un cuerpo. Según la tradición esotérica —teosofía, yoga y gnosis—, somos nueve niveles en tres movimientos:
+
+🤍 I. Físico-Pránico: cuerpo, energía vital y respiración. El vehículo que se cuida y se purifica.
+💜 II. Astral-Causal: emociones, mente concreta y alma. El puente donde despierta la conciencia.
+✨ III. Búdico-Átmico-Luz: intuición, espíritu y conciencia pura. La esencia que refleja la luz divina.
+
+No son capas separadas: se interpenetran, como las capas de una cebolla que guardan la misma luz. Respira. Observa. Medita. Y recuerda: es un mapa simbólico de las tradiciones, no una medida médica.
+
+¿Con cuál de los tres complejos te sientes hoy más en contacto? 👇
+
+#Conciencia #Equilibrio #VidaSaludable #LovShambhala</div>
+  <h3>Historia — 3 tarjetas + cierre</h3>
+  <p style="text-align:center;"><strong>Tarjeta 1:</strong> «3 complejos, 9 cuerpos — un mapa, no una regla» · <strong>Tarjeta 2:</strong> «Purifica el vehículo: respiración + movimiento + descanso» · <strong>Tarjeta 3:</strong> «Despierta el puente: observa tus emociones sin ser ellas · Medita 5 minutos» · <strong>Tarjeta final:</strong> «La luz no se busca fuera: se refleja cuando el espejo está limpio. Fuentes: Blavatsky, Besant-Leadbeater, Bailey, <em>Taittiriya Upanishad</em> (koshas), Samael Aun Weor. Mapa esotérico, no evidencia científica.»</p>
+  <p style="text-align:center;">Al publicar, mantén la fórmula «según la tradición esotérica / teosófica…» y evita promesas de salud, curación o resultados: las prácticas asociadas (respiración, yoga, meditación, gestión emocional) tienen respaldo tradicional, pero no «activan» un cuerpo sutil en sentido comprobable.</p>
+</section>
+
+<section id="fuentes">
+  <h2>Fuentes</h2>
+  <p style="text-align:center;">Investigación realizada el 16 de noviembre de 2026. «Verificado en vivo» = la página se abrió y se leyó ese día; «índice» = localizada en el índice de búsqueda, sin lectura completa.</p>
+  <ul class="fuentes">
+    <li>Constitución septenaria (Blavatsky; Tríada + Cuaternario; <em>antahkarana</em>; correspondencia con los <em>koshas</em>) — verificado en vivo — <a href="https://es.wikipedia.org/wiki/Constituci%C3%B3n_septenaria" target="_blank" rel="noopener">es.wikipedia.org/wiki/Constitución_septenaria</a></li>
+    <li>Theosophy World, «Human Constitution» (7 principios de Blavatsky; reclasificación Besant/Leadbeater; Atma no individual; Huevo Áurico) — verificado en vivo — <a href="https://theosophy.world/zh-hant/node/1340" target="_blank" rel="noopener">theosophy.world/zh-hant/node/1340</a></li>
+    <li>Movimiento Despierta, «La Constitución Septenaria del Ser Humano» (según Emilio Carrillo; definiciones de los 7 cuerpos, cordón de plata, <em>antahkarana</em>, causal/kármico, búdico/átmico) — fuente divulgativa, verificada en vivo — <a href="https://movimientodespierta.com/el-secreto-de-lo-que-somos-la-constitucion-septenaria-del-ser-humano/" target="_blank" rel="noopener">movimientodespierta.com</a></li>
+    <li>Abhyasi, «Koshas» (5 <em>koshas</em>; <em>pranamaya</em> y respiración; <em>vijnanamaya</em> y Budhi; <em>anandamaya</em> y Atman) — verificado en vivo — <a href="https://www.abhyasi.com/koshas/" target="_blank" rel="noopener">abhyasi.com/koshas</a></li>
+    <li>Samael Aun Weor, «¿Cuáles son los siete cuerpos?» (definiciones gnósticas de los 7 cuerpos) — verificado en vivo — <a href="https://www.samaelgnosis.net/preguntas/siete_cuerpos.html" target="_blank" rel="noopener">samaelgnosis.net</a></li>
+    <li>Prana.es, José Manuel Martínez Sánchez, «Hatha Yoga y Meditación» (<em>Hatha Yoga Pradipika</em>, <em>Gheranda Samhita</em>; <em>shodhana</em>, <em>nirliptatva</em>; pranayama HYP 2.3; <em>raja yoga</em>) — verificado en vivo — <a href="https://www.prana.es/blog/el-hatha-yoga-como-preparacion-integral-para-la-practica-meditativa" target="_blank" rel="noopener">prana.es</a></li>
+    <li>Alice Bailey / Djwhal Khul, <em>El alma: la cualidad de la vida</em> (Tríada, personalidad, cuerpo causal) — índice — <a href="http://www.fraternidadrosacruzdecolombia.org/wp-content/uploads/2013/12/alice_bailey_el_alma_la_cualidad_de_la_vida-ESOTERISMO-CRISTIANO.pdf" target="_blank" rel="noopener">fraternidadrosacruzdecolombia.org (PDF)</a></li>
+    <li>Alice Bailey, <em>Cartas sobre meditación ocultista</em> (Tríada → personalidad vía causal) — índice — <a href="https://www.revistanivel2.es/colores.htm" target="_blank" rel="noopener">revistanivel2.es/colores.htm</a></li>
+    <li>Antroposofía / Steiner: 4 miembros y 3 transformaciones superiores (Manas / Budhi / Atman) — índice — <a href="https://revistas.uned.ac.cr/index.php/innovaciones/en/article/download/1650/1870/3971" target="_blank" rel="noopener">revistas.uned.ac.cr</a> · <a href="https://ladiosaquetehabita.blogspot.com/2025/05/las-tres-etapas-del-alma.html" target="_blank" rel="noopener">ladiosaquetehabita.blogspot.com</a></li>
+    <li>Cuerpo de luz: Regardie, <em>El árbol de la vida</em>, cap. 10 (<em>Mayavi-rupa</em> = Cuerpo de Luz) — índice — <a href="https://1library.co/article/capitulo-diez-israel-regardie-el-arbol-vida-final.yr89w3jz" target="_blank" rel="noopener">1library.co</a> · Besant, <em>El hombre y sus cuerpos</em> (<em>Mayavi Rupa</em> temporal) — índice — <a href="https://es.slideshare.net/slideshow/annie-besant-el-hombre-y-sus-cuerpos/45822028" target="_blank" rel="noopener">slideshare.net</a> · Beltrán Anglada, <em>Karana Sharira</em> = «cuerpo de luz» — índice — <a href="https://www.asociacionvicentebeltrananglada.org/downloads/Conferencias/Pdf/1987-10-11.pdf" target="_blank" rel="noopener">asociacionvicentebeltrananglada.org (PDF)</a> · Cuerpo Espiritual gestado en el causal — índice — <a href="https://el-alma-humana-y-divina.blogspot.com/" target="_blank" rel="noopener">el-alma-humana-y-divina.blogspot.com</a></li>
+    <li>Cuerpo de arcoíris / <em>Jalu</em> (Dzogchen) — índice — <a href="https://www.jesusbonillatanumanasi.com/2026/10/que-es-el-cuerpo-de-arcoiris-jalu-en-el.html" target="_blank" rel="noopener">jesusbonillatanumanasi.com</a> · <a href="https://revistas.ucm.es/index.php/AMAL/article/download/88676/4564456573575/4564456769711" target="_blank" rel="noopener">revistas.ucm.es (PDF)</a></li>
+    <li>Nueve componentes egipcios (distintos de este esquema) — índice — <a href="https://egyptianwisdomcenter.org/es/el-ser-humano-la-replica-universal-9-componentes/" target="_blank" rel="noopener">egyptianwisdomcenter.org</a></li>
+    <li>Diez cuerpos del Kundalini Yoga (contraste) — índice — <a href="https://miretirodeyoga.com/los-10-cuerpos-energeticos/" target="_blank" rel="noopener">miretirodeyoga.com</a></li>
+    <li>Prana / cuerpo pránico (Vedanta Advaita) — índice — <a href="https://vedantaadvaita.com/blog/2016/06/10/nacimiento-muerte-y-prana/" target="_blank" rel="noopener">vedantaadvaita.com</a></li>
+    <li>Samael, <em>Tratado de alquimia sexual</em> («los siete sellos son los siete cuerpos…») — índice — <a href="https://gnosistr.com/wp-content/uploads/2022/01/Tratado-de-alquimia-sexual-7.pdf" target="_blank" rel="noopener">gnosistr.com (PDF)</a> · Estudio gnóstico (cuerpos por crear) — índice — <a href="https://granhalcon.github.io/circulo-solar/docs/assets/media/qe/pdf/005-002-estudio.pdf" target="_blank" rel="noopener">granhalcon.github.io (PDF)</a></li>
+    <li>Los <em>koshas</em> y la <em>Taittiriya Upanishad</em> — índice — <a href="https://www.yogaposedictionary.com/es/koshas" target="_blank" rel="noopener">yogaposedictionary.com/es/koshas</a></li>
+  </ul>
 </section>
 
 <section>
-  <h2>III · Complejo Mental-Espiritual</h2>
-  <p style="text-align:center;">Esencia Eterna · Reflexión de la Luz Divina</p>
-  <div class="cuerpo"><strong>7. Cuerpo Búdico (Intuición / Unidad).</strong> Intuición directa sin razonamiento, unidad y amor-sabiduría. El alma universal.</div>
-  <div class="cuerpo"><strong>8. Cuerpo Átmico.</strong> El espíritu, la chispa divina. Origen y destino: está en todo y no se identifica con lo personal.</div>
-  <div class="cuerpo"><strong>9. Cuerpo de Luz (Conciencia Pura).</strong> La meta, la realización: conciencia pura, luz sin forma. No es un cuerpo que todo el mundo ya posee, es el horizonte del camino.</div>
-  <p class="practica" style="text-align:center;">Práctica: meditación profunda, contemplación y silencio.</p>
-</section>
-
-<section>
-  <p style="text-align:center;">Respira. Observa. Medita. La luz no se busca fuera: se refleja cuando el espejo está limpio.</p>
-  <p style="text-align:center; font-size:.95rem; color:#6b7a6e;">Fuentes: Blavatsky, <em>La doctrina secreta</em>; Besant y Leadbeater; Alice Bailey; <em>Taittiriya Upanishad</em> (koshas); Samael Aun Weor.</p>
+  <p style="text-align:center;">Página de síntesis divulgativa para LovShambhala, elaborada a partir de la investigación del 16 de noviembre de 2026. Es un mapa simbólico de las tradiciones esotéricas —teosofía, Vedanta, antroposofía y gnosis—, no una afirmación científica ni médica. Respira. Observa. Medita.</p>
   <p class="volver"><a href="index.html">← Volver a LovShambhala</a></p>
 </section>
 
@@ -81,6 +316,18 @@
   LovShambhala — Zacatecas, México 🌿<br>
   Conciencia, equilibrio y vida saludable.
 </footer>
+
+<script>
+function filtrar(f, btn) {
+  var botones = document.querySelectorAll('.filtros button');
+  botones.forEach(function(b) { b.classList.remove('activo'); });
+  btn.classList.add('activo');
+  var tarjetas = document.querySelectorAll('.cuerpo[data-complejo]');
+  tarjetas.forEach(function(t) {
+    t.style.display = (f === 'todos' || t.getAttribute('data-complejo') === f) ? '' : 'none';
+  });
+}
+</script>
 
 </body>
 </html>
